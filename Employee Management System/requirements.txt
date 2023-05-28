@@ -1,0 +1,18 @@
+Need:
+install python
+IDE: Vscode
+MYSQL Database
+
+labraries:
+pip install pillow
+pip install mysql-connector-python
+
+stayhome=Label(Search_Frame,text=" ",font=("times new roman",30,"bold"),fg="red",bg="white")
+        stayhome.place(x=780,y=0,width=600,height=30)
+
+        img_logo_mask=Image.open(r"college_images\mask.jpg")
+        img_logo_mask=img_logo_mask.resize((50,50),Image.ANTIALIAS)
+        self.photoimg_logo_mask=ImageTk.PhotoImage(img_logo_mask)
+
+        self.logo=Label(Search_Frame,image=self.photoimg_logo_mask)
+        self.logo.place(x=900,y=0,width=50,height=30)
